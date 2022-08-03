@@ -27,7 +27,7 @@
   @media(min-width: 800px) {
     :root {
       --fs-h1: 4.5rem;
-      --fs-h2: 3.75 rem;
+      --fs-h2: 3.75rem;
       --fs-h3: 1.5rem;
       --fs-body: 1.125rem;
 
@@ -414,7 +414,7 @@ header {
 
 .my-work {
   background-color: var(--clr-dark);
-  color: var(--clr-light);
+  color: var(--clr-accent);
   text-align: center;
 }
 
@@ -445,10 +445,14 @@ header {
   outline: none;
   grid-row: 2 / span 1;
   grid-column: 2;
-  color: var(--clr-accent);
+  width: 200px;
+  color: var(--clr-dark);
+  background-color: var(--clr-accent);
+  font-weight: bold;
   text-decoration: none;
   justify-self: center;
   align-self: center;
+  z-index: 1;
 }
 
 .portfolio__item:focus {
@@ -457,12 +461,11 @@ header {
   z-index: 2;
 }
 
-.portfolio__img:hover,
+.portfolio__img:hover, .bottom__right:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: .75;
 }
-
 
 
 
