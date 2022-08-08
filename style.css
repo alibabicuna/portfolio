@@ -269,6 +269,7 @@ header {
 
 .intro {
   position: relative;
+  padding-top: 2em;
 }
 
 .intro__img {
@@ -349,6 +350,11 @@ header {
 }
 
 @media (min-width: 800px) {
+
+  .intro {
+    padding-top: 5em;
+  }
+
   .services {
     display: flex;
     max-width: 1000px;
